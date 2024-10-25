@@ -31,9 +31,8 @@ const Home = () => {
       end={{
         transform : 'translatex(0px)'
       }}
-      
-      
       >
+        
         <div className="home__text-wrapper__contact-me">
           <button onClick={handleNavigateToContactPage}>Hire Me</button>
         </div>
