@@ -7,7 +7,7 @@ import { DiApple, DiAndroid } from "react-icons/di";
 import { FaDev, FaDatabase } from "react-icons/fa";
 
 const personalDetails = [
-  { label: "Name :-", value: "Roshan Kumar" },
+  { label: "Name :-", value: "Roshan Kumarcd" },
   { label: "Age :-", value: "20" },
   { label: "Address :-", value: "Greater Noida" },
   { label: "Email :-", value: "roshan122003@gmail.com" },
