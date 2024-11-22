@@ -10,7 +10,12 @@ export const data = {
             subtitle: "Solving complex problems on LeetCode",
             description: "Solved problems related to data structures, algorithms, and problem-solving",
 
-        },
+        },{
+            title: "Mobile App Development Project",
+            subTitle: "Task Management App for Android using Java and SQLite",
+            description: "Built a task management app with features like creating, updating, deleting, and marking tasks as completed.",
+
+        }
     ],
 
 education: [

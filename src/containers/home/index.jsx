@@ -16,7 +16,7 @@ const Home = () => {
         <h1>
           Hello, I'm Roshan Kumar <br />
           And I'm a <br />
-          Full Stack Developer & UI/UX Designer
+          Full Stack Developer & Programming Language
         </h1>
       </div>
 
