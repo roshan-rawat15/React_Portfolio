@@ -1,0 +1,145 @@
+.contact {
+    &__content {
+      padding: 20px;
+  
+      &__header-text {
+        color: var(--yellow-theme-sub-text-color);
+        display: inline-block;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 1rem;
+        letter-spacing: 0.5px;
+        position: relative;
+        text-transform: uppercase;
+        padding: 5px 10px;
+        border-bottom: 2px solid var(--yellow-theme-main-color);
+      }
+  
+      &__header-text::before,
+      &__header-text::after {
+        position: absolute;
+        content: "";
+        width: 2px;
+        height: 5px;
+        background-color: var(--yellow-theme-main-color);
+        bottom: -1px;
+      }
+      &__header-text::before {
+        left: 0;
+      }
+      &__header-text::after {
+        right: 0;
+      }
+  
+      &__form {
+        margin-top: 30px;
+  
+        &__controlswrapper {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 40px;
+          margin-top: 30px;
+  
+          div {
+            position: relative;
+  
+            input {
+              width: 100%;
+              border: 2px solid var(--yellow-theme-main-color);
+              padding: 20px 12px;
+              transition: all 0.5s ease;
+              background-color: transparent;
+              color: var(--yellow-theme-sub-text-color);
+              font-size: 16px;
+              border-radius: 4px;
+            }
+  
+            label {
+              position: absolute;
+              top: 50%;
+              left: 12px;
+              transform: translateY(-50%);
+              font-size: 16px;
+              color: var(--yellow-theme-main-color);
+              font-weight: 500;
+              transition: all 0.2s ease;
+              pointer-events: none;
+            }
+  
+            /* Floating label effect */
+            input:focus + label,
+            input:not(:placeholder-shown) + label {
+              top: -10px;
+              left: 12px;
+              font-size: 14px;
+              color: var(--yellow-theme-main-color);
+              padding: 0 5px;
+              z-index: 1;
+            }
+  
+            input:focus {
+              border-color: var(--yellow-theme-main-color);
+              outline: none;
+            }
+          }
+        }
+  
+        button {
+          grid-column: span 2; /* Center the button across both columns */
+          padding: 12px 20px;
+          font-size: 18px;
+          color: var(--yellow-theme-sub-text-color);
+          background-color: var(--yellow-theme-main-color);
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-weight: 600;
+          margin-top: 20px;
+          margin-left: auto;
+          margin-right: auto;
+          transition: all 0.3s ease;
+          display: block;
+        }
+  
+        button:hover {
+          background-color: var(--yellow-theme-sub-text-color);
+          color: var(--yellow-theme-main-color);
+        }
+      }
+    }
+  
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      &__content {
+        padding: 10px;
+  
+        &__form {
+          &__controlswrapper {
+            grid-template-columns: 1fr; /* Switch to a single-column layout */
+            gap: 20px; /* Reduce spacing between fields */
+          }
+  
+          button {
+            width: 100%; /* Make the button full-width */
+            padding: 12px; /* Adjust padding */
+          }
+        }
+      }
+    }
+  
+    @media (max-width: 480px) {
+      &__content {
+        &__header-text {
+          font-size: 18px; /* Reduce font size */
+        }
+  
+        &__form {
+          button {
+            font-size: 16px; /* Adjust button font size */
+            padding: 10px; /* Adjust padding for smaller screens */
+          }
+        }
+      }
+    }
+  }
+  

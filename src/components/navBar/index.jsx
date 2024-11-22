@@ -22,12 +22,12 @@ const data = [
     to: "/resume",
   },
   {
-    label: "CONTACT",
-    to: "/contact",
-  },
-  {
     label: "PORTFOLIO",
     to: "/portfolio",
+  },
+  {
+    label: "CONTACT",
+    to: "/contact",
   },
 ];
 
